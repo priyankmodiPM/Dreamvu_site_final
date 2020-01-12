@@ -1,0 +1,80 @@
+.container .content-wrapper {
+	overflow: initial;
+}
+
+.dropdown {
+	margin: 0 auto;
+	width: 200px;
+	box-shadow: none !important;
+	border: 0;
+}
+
+.dropdown .selected, .dropdown li {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	padding: 0;
+}
+
+.dropdown .selected {
+	font-size: 30px;
+	padding: 10px 0;
+}
+
+.dropdown .carat {
+	border-top: 8px solid #0095d3;
+}
+
+.dropdown.open .carat {
+	border-bottom: 8px solid #0095d3;
+}
+
+.dropdown ul {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.dropdown li {
+	padding: 15px;
+}
+
+.dropdown li.focus {
+	background: #0095d3;
+}
+
+.industry-image {
+	height: 200px;
+	overflow: hidden;
+}
+
+.industry-image img {
+	width: 100%;
+	min-height: 700px;
+}
+
+.industry-desc {
+	width: 100%;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 2em;
+}
+
+@media screen and (min-width: 1000px) {
+	.dropdown {
+		width: 320px;
+	}
+	.dropdown .selected {
+		font-size: 42px;
+	}
+	.industry-image {
+		height: 400px;
+	}
+	.industry-image img {
+		margin-top: -300px;
+	}
+	.industry-desc {
+		width: 80%;
+		font-size: 16px;
+		padding: 100px 0;
+	}
+}

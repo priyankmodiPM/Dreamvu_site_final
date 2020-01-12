@@ -1,0 +1,99 @@
+.contact-us-home {
+	height: calc(100vw * 1.56);
+	max-height: 500px;
+	padding: 0;
+	z-index: 0;
+	overflow: hidden;
+	border-bottom: 1px solid whitesmoke;
+}
+
+.contact-us-home .bg {
+	width: 780px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	margin-left: calc((780px - 100%) / -2);
+	opacity: 0.6;
+}
+
+.contact-us-home .punch-line {
+	width: 100%;
+	margin: 120px 0 0 0;
+	font-size: 22px;
+}
+
+.contact-us-home .desc {
+	width: 100%;
+	margin: 15px auto;
+	font-size: 14px;
+	line-height: 1.8em;
+}
+
+.send-us-message .contact-details {
+	position: absolute;
+	top: 0;
+	right: 0;
+	box-sizing: border-box;
+	position: relative;
+	width: 100%;
+	padding: 50px;
+	height: auto;
+}
+
+.send-us-message .form-group input[type="text"] {
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+.send-us-message .form-group input[type="text"]:last-child {
+	margin-bottom: 0;
+}
+
+.send-us-message .form-group textarea {
+	width: 100%;
+}
+
+.contact-details .address-heading {
+	margin: 30px 0 15px 0;
+}
+
+.contact-details h6 {
+	margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1000px) {
+	.contact-us-home {
+		height: calc(100vw / 1.5);
+		max-height: 700px;
+	}
+	.contact-us-home .bg {
+		width: 100%;
+		margin-left: 0;
+	}
+	.contact-us-home .punch-line {
+		width: 60%;
+		margin: 150px auto 0 auto;
+		font-size: 38px;
+	}
+	.contact-us-home .desc {
+		width: 50%;
+		font-size: 16px;
+		line-height: 2em;
+	}
+	.send-us-message {
+		height: 765px;
+	}
+	.send-us-message .contact-details {
+		position: absolute;
+		width: 400px;
+		height: 100%;
+		padding: 100px 50px;
+	}
+	.send-us-message .form-group input[type="text"] {
+		width: 80%;
+	}
+	.send-us-message .form-group textarea {
+		width: 90%;
+	}
+}

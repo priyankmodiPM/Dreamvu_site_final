@@ -1,0 +1,396 @@
+.home-page .punch-line {
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+	z-index: 3;
+	width: 100%;
+	padding: 0;
+	text-align: center;
+	height: auto;
+}
+
+.home-page .punch-line h3 {
+	font-size: 22px;
+	line-height: 1.4em;
+	margin-top: 15px;
+
+	-webkit-transition: all 900ms ease-out;
+	-moz-transition: all 900ms ease-out;
+	-ms-transition: all 900ms ease-out;
+	-o-transition: all 900ms ease-out;
+	transition: all 900ms ease-in;
+}
+
+.home-page .punch-line h3.animate--show {
+	-webkit-transform: translateY(0%);
+	-moz-transform: translateY(0%);
+	-ms-transform: translateY(0%);
+	-o-transform: translateY(0%);
+	transform: translateY(0%);
+}
+
+.home-page .punch-line .btn {
+	padding: 15px 60px;
+}
+
+.home-page .circular-carousel {
+	position: relative;
+	width: 100%;
+	height: calc(100vw - 60px);
+	box-sizing: border-box;
+	padding: 15px;
+	overflow: hidden;
+}
+
+.home-page .circular-carousel .mask {
+	position: absolute;
+	z-index: 2;
+	height: calc(.3125 * 100vw);
+	width: calc(.3125 * 100vw);
+	background: white;
+}
+
+.home-page .circular-carousel .item {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: 55%;
+	z-index: 1;
+	will-change: transform, opacity;
+	opacity: 0;
+
+	-webkit-transform: scale(0) rotate(90deg);
+	-moz-transform: scale(0) rotate(90deg);
+	-ms-transform: scale(0) rotate(90deg);
+	-o-transform: scale(0) rotate(90deg);
+	transform: scale(0) rotate(90deg);
+
+	-webkit-transition: all 600ms ease-out;
+	-moz-transition: all 600ms ease-out;
+	-ms-transition: all 600ms ease-out;
+	-o-transition: all 600ms ease-out;
+	transition: all 600ms ease-out;
+}
+
+.home-page .circular-carousel .item.animate--show {
+	opacity: 1;
+
+	-webkit-transform: scale(1) rotate(0deg);
+	-moz-transform: scale(1) rotate(0deg);
+	-ms-transform: scale(1) rotate(0deg);
+	-o-transform: scale(1) rotate(0deg);
+	transform: scale(1) rotate(0deg);
+
+	-webkit-transition: all 900ms cubic-bezier(1, -0.48, 0.49, 0.83);
+	-moz-transition: all 900ms cubic-bezier(1, -0.48, 0.49, 0.83);
+	-ms-transition: all 900ms cubic-bezier(1, -0.48, 0.49, 0.83);
+	-o-transition: all 900ms cubic-bezier(1, -0.48, 0.49, 0.83);
+	transition: all 900ms cubic-bezier(1, -0.48, 0.49, 0.83);
+}
+
+.home-page .offerings {
+	margin-bottom: 80px;
+}
+
+.home-page .offerings .offering {
+	margin-bottom: 50px;
+}
+
+.home-page .offerings .offering:last-child {
+	margin-bottom: 0;
+}
+
+.home-page .offerings .icon {
+	width: 120px;
+	height: 120px;
+	background-image: url(../images/icons.png);
+	background-size: 1080px 240px;
+	margin: 30px auto;
+}
+
+.home-page .offerings .icon.three-d {
+	background-position: 0 0;
+}
+
+.home-page .offerings .icon.video {
+	background-position: -120px 0;
+}
+
+.home-page .offerings .icon.vr-ar {
+	background-position: -240px 0;
+}
+
+.home-page .offerings h4 {
+	margin: 15px 0;
+}
+
+.home-page .offerings p {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.product {
+
+	z-index: 0;
+	overflow: hidden;
+
+}
+
+.product .content-wrapper {
+	overflow: initial;
+	margin-top: 30px;
+}
+
+.product .product-image {
+	padding: 0 0 0 0;
+	position: relative;
+	text-align: center;
+}
+
+.product .product-image .dotted-svg {
+	position: absolute;
+	left: -40px;
+	top: -70px;
+	display: none;
+}
+
+.product .product-image img {
+	width: 100%;
+}
+
+.product .product-content {
+	margin-top: 30px;
+}
+
+.product .product-content h1 {
+	font-size: 26px;
+}
+
+.product .product-content ul {
+	margin: 50px 0 0 0;
+}
+
+.product .product-content .product-features {
+	margin: 0;
+}
+
+.product .product-content li {
+	color: whitesmoke;
+	font-size: 20px;
+	font-weight: 300;
+	margin: 15px 0;
+	line-height: 1.8em;
+}
+
+.product .product-content ul li:first-child {
+	margin-top: 0;
+}
+
+.industries .industry-types {
+	margin: 50px 0;
+	overflow: hidden;
+	white-space: nowrap;
+	position: relative;
+}
+
+.industries .industry-types .type {
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+
+	-webkit-transition: all 300ms ease-in;
+	-moz-transition: all 300ms ease-in;
+	-ms-transition: all 300ms ease-in;
+	-o-transition: all 300ms ease-in;
+	transition: all 300ms ease-in;
+}
+
+.industries .industry-types .type .icon-wr {
+	width: 60px;
+	height: 60px;
+	padding: 20px 25px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border-radius: 8px;
+}
+
+.industries .industry-types .type .icon-wr .icon {
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/icons_60.png);
+	background-size: 600px 120px;
+}
+
+.industries .industry-types .type .icon-wr .icon.icon-vg {
+	background-position: -480px -60px;
+}
+
+.industries .industry-types .type .icon-wr .icon.icon-ve {
+	background-position: -60px -60px;
+}
+
+.industries .industry-types .type .icon-wr .icon.icon-ht {
+	background-position: -420px -60px;
+}
+
+.industries .industry-types .type .icon-wr .icon.icon-ro {
+	background-position: -540px -60px;
+}
+
+.industries .industry-types .type .icon-wr .icon.icon-sc {
+	background-position: -420px -60px;
+}
+
+.industries .industry-types .type .icon-wr .icon.icon-av {
+	background-position: -180px -60px;
+}
+
+.industries .industry-types .type .icon-wr .icon.icon-dr {
+	background-position: -240px -60px;
+}
+
+.industries .industry-types .type.selected .icon-wr {
+	background: linear-gradient(135deg, rgba(0, 146, 209, 1) 0%, rgba(0, 146, 209, 1) 9%, rgba(45, 79, 164, 1) 100%);
+}
+
+.industries .industry-types .type.selected .icon-wr .icon {
+	background-position-y: 0;
+}
+
+.industries .industry-types .type.selected h6 {
+	color: #0095d3;
+}
+
+.industries .industry-types .nav-arrow {
+	position: absolute;
+	top: 30px;
+	width: 40px;
+	cursor: pointer;
+}
+
+.industries .industry-types .nav-arrow.nav-arrow--left {
+	left: 0;
+}
+
+.industries .industry-types .nav-arrow.nav-arrow--right {
+	right: 0;
+}
+
+.industries .industry-detail {
+	margin: 50px 0;
+}
+
+.industries .industry-detail .image img {
+	width: 100%;
+}
+
+.industries .industry-detail .desc {
+	text-align: center;
+	padding: 15px;
+}
+
+.industries .industry-detail .desc p a {
+	margin-top: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+	.home-page {
+		padding: 50px 0 100px 0;
+	}
+	.home-page .circular-carousel {
+		position: absolute;
+		padding: 0;
+		top: 0;
+		right: 0;
+		max-width: 600px;
+		max-height: 600px;
+		height: calc(100vh - 140px);
+		width: calc(100vh - 140px);
+	}
+	.home-page .circular-carousel .mask {
+		max-height: 250px;
+		max-width: 250px;
+		height: calc(.42 * 100%);
+    width: calc(.42 * 100%);
+	}
+	.home-page .punch-line {
+		width: 60%;
+		padding: 60px 0 0 0;
+		height: 600px;
+		text-align: left;
+	}
+	.home-page .punch-line h3 {
+		font-size: 32px;
+		line-height: 1.4em;
+		margin-top: 0;
+	}
+	.home-page .offerings .icon {
+		
+	}
+	.home-page .offerings .offering {
+		margin-bottom: 0;
+	}
+	.product .product-image {
+		padding: 0 0 0 0px;
+		text-align: left;
+		position: relative;
+	}
+	.product .product-image .dotted-svg {
+		display: block;
+	}
+	.product .product-image img {
+		width: 100%;
+	}
+	.product .product-content {
+		margin-top: -15px;
+	}
+	.product .product-content h1 {
+		font-size: 40px;
+		margin-bottom: 50px;
+	}
+	.product .product-content p {
+		width: 50%;
+	}
+	.product .product-content .product-features {
+		margin: 0 0 0 60px;
+		width: 100%;
+	}
+	.product .product-content li {
+		font-size: 26px;
+		margin: 30px 0;
+		font-weight: 500;
+	}
+	.product .product-content li:nth-child(1), .product .product-content li:nth-child(7) {
+		margin-left: -19%;
+	}
+	.product .product-content li:nth-child(2), .product .product-content li:nth-child(6) {
+		margin-left: -10%;
+	}
+	.product .product-content li:nth-child(3), .product .product-content li:nth-child(5) {
+		margin-left: -5%;
+	}
+	.product .product-content li:nth-child(4) {
+		margin-left: -3%;
+	}
+	.industries .industry-types .type {
+		width: 16.66666667%;
+	}
+	.industries .industry-types .nav-arrow {
+		display: none;
+	}
+	.industries .industry-detail {
+		margin: 100px 0;
+	}
+	.industries .industry-detail .desc {
+		text-align: left;
+		padding: 15px 30px;
+	}
+	.industries .industry-detail .desc p a {
+		margin-top: 15px;
+	}
+}

@@ -1,0 +1,121 @@
+.careers-home {
+	height: 500px;
+}
+
+.careers-home .punch-line {
+	width: 100%;
+	margin: 120px 0 0 0;
+	font-size: 22px;
+}
+
+.careers-home .desc {
+	width: 100%;
+	margin: 15px auto;
+	font-size: 14px;
+	line-height: 1.8em;
+}
+
+.values {
+	margin-top: 30px;
+}
+
+.values .value {
+	margin-bottom: 50px;
+	opacity: 0;
+	will-change: transform, opacity;
+	-webkit-transform: translateY(30%);
+	-moz-transform: translateY(30%);
+	-ms-transform: translateY(30%);
+	-o-transform: translateY(30%);
+	transform: translateY(30%);
+}
+
+.values .value.animate--show {
+	opacity: 1;
+	-webkit-transform: translateY(0%);
+	-moz-transform: translateY(0%);
+	-ms-transform: translateY(0%);
+	-o-transform: translateY(0%);
+	transform: translateY(0%);
+	-webkit-transition: all 600ms ease-in;
+	-moz-transition: all 600ms ease-in;
+	-ms-transition: all 600ms ease-in;
+	-o-transition: all 600ms ease-in;
+	transition: all 600ms ease-in;
+}
+
+.values .value:last-child {
+	margin-bottom: 0;
+}
+
+.values img {
+	width: 50%;
+	box-sizing: border-box;
+	padding: 15px;
+	display: none;
+}
+
+.values h4 {
+	margin: 15px 0;
+	font-weight: 400;
+}
+
+.values p {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 1.6em;
+}
+
+.openings .department {
+	margin-top: 30px;
+}
+
+.openings .department .department-name img {
+	width: 18px;
+	vertical-align: bottom;
+	margin-left: 15px;
+	background: whitesmoke;
+	padding: 5px;
+}
+
+.openings .department .department-open-positions .position {
+	margin-top: 30px;
+}
+
+.openings .department .department-open-positions .position h5 {
+	font-size: 18px;
+}
+
+.openings .department .department-open-positions .position h5 img {
+	width: 18px;
+	float: right;
+	position: relative;
+	top: 4px;
+}
+
+@media screen and (min-width: 1000px) {
+	.careers-home {
+		height: 600px;
+	}
+	.careers-home .punch-line {
+		width: 75%;
+		margin: 55px auto 0 auto;
+		font-size: 38px;
+	}
+	.careers-home .desc {
+		width: 60%;
+		font-size: 16px;
+		line-height: 2em;
+	}
+	.values img {
+		padding: 30px;
+		display: none;
+	}
+	.values p {
+		width: 70%;
+	}
+	.values .value {
+		margin-bottom: 0;
+	}
+}

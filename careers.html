@@ -1,0 +1,832 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>DreamVu</title>
+  <meta name="description" content="DreamVu">
+  <meta name="author" content="Ravi Piplani">
+
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/css/normalize.css?v=0.3">
+  <link rel="stylesheet" href="/css/bootstrap.css?v=0.3">
+  <link rel="stylesheet" href="/css/main.css?v=0.3">
+  <link rel="stylesheet" href="/css/careers.css?v=0.3">
+  
+
+  <!-- favicons & theme -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="theme-color" content="#2d4ea2">
+
+  <!-- external fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Open+Sans:300,400,600,700" rel="stylesheet">
+</head>
+<style>
+  ul {
+    list-style-type: none;
+  }
+  li{
+    float: left;
+    width: 15%;
+    text-align: center;
+    font-size:14px;
+  }
+  li a{
+    text-decoration: none;
+  }
+  li span{
+    display: block; 
+    padding: 10px;
+    color:#666666;
+    font-size: 14px;
+    
+  }
+  .department-menu{
+    display: block;
+    padding-bottom: 2%;
+    height: 60px;
+  }
+  .department-position{
+    display:block; 
+  }
+  .hide{
+    display: none;
+  }
+  .show{
+    display: block;
+  }
+  .active{
+    border-bottom-color: #0095d3;
+    border-bottom-style: solid;
+    color: #666666;
+
+  }
+  .active2{
+    background: linear-gradient(to right,#0095d3 , #2d4ea2);
+    color: white;
+    border-radius: 5px;
+   
+  }
+  .inactive{
+    color:#666666;
+  }
+  
+  .container {
+	max-width: 1400px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	opacity: 0;
+}
+
+    .content-wrapper{
+    width: 100%;
+	margin: 0 auto;
+	position: relative;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 30px;
+	overflow: hidden;
+	z-index: 3;
+  }
+  
+  .DepartmentHeader{
+    width: 40%;
+  }
+  .posHeader{
+    padding: 5px;
+    font-size: 14px;
+    color:#666666;
+    font-weight: 500;
+    padding-bottom: 5%;
+  }
+  .posBlock{
+    font-size: 14px;
+    margin: 15px;
+    padding: 5px;
+  }
+  .imageProp{
+    margin-top: -10%;
+    width: 3%;
+    float: right;
+    padding: 5px;
+  }
+  .secondary_tab{
+    padding-left: 2%;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div id="header"></div>
+    <section class="page careers-home">
+      <div class="content-wrapper text-center">
+        <h2 class="text-headline punch-line">Join us as a fellow traveller in a journey to redefine camera technologies...</h2>
+        <!--<p class="para text-headline desc">DreamVu is working towards capturing and analyzing panoramic RGBD content to make it more meaningful for both humans and machines. We use advanced computational photography techniques to enable use-cases which were impossible to imagine before.</p> -->
+        <a class="btn bg-gradient--accent inline-block margin-top-15" href="mailto:info@dreamvu.com">Curious, write to us !</a>
+      </div>
+    </section>
+    <section class="page we-value bg-gradient--accent">
+      <div class="content-wrapper">
+        <h3 class="page-title text-center text-white">We Value</h3>
+        <div class="values text-center">
+          <div class="col-md-4 value">
+            <!-- <img src="images/icon_cam.png" /> -->
+            <h4 class="text-headline text-white">Ingenuity</h4>
+            <p class="text-primary text-white">DreamVu provides you a platform to come up with creative ideas and back it with solid research. </p>
+          </div><div class="col-md-4 value">
+            <!-- <img src="images/icon_video.png" /> -->
+            <h4 class="text-headline text-white">Diligence</h4>
+            <p class="text-primary text-white">At DreamVu we believe in hard persistent efforts to achieve unparalleled success.</p>
+          </div><div class="col-md-4 value">
+            <!-- <img src="images/icon_share.png" /> -->
+            <h4 class="text-headline text-white">Empathy</h4>
+            <p class="text-primary text-white">A great team requires people with compassion towards their co-workers, clients and the world in general. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page openings">
+      <div class="content-wrapper">
+        <h3 class="page-title" style="padding-bottom:80px;">We are hiring!</h3>
+       <!-- <p class="page-brief">Looking for people who are interested in what we are doing and would want to join the revolution.</p> -->
+        <div class="department">
+          <div class = "department-menu">
+            <ul class = "department-list" id = "department_list">
+              <li>
+                <a href= "javascript:void(0);" id="computer_vision" onclick="addClassToId(this.id)">
+                 <span id="computer_vision_span" >Computer Vision</span> 
+                </a>
+              </li>
+              <li class="secondary_tab">
+                <a href= "javascript:void(0);" id ="software" onclick="addClassToId(this.id)">
+                 <span id ="software_span">Software</span> 
+               </a>
+              </li>
+              <li class="secondary_tab">
+                <a href= "javascript:void(0);" id="design" onclick="addClassToId(this.id)">
+                  <span id="design_span">Design &amp; Mechanical</span> 
+                </a>
+              </li>
+              <li class="secondary_tab">
+                <a href= "javascript:void(0);" id= "embedded" onclick="addClassToId(this.id)">
+                  <span id= "embedded_span">Embedded Software</span>  
+                </a>
+              </li>
+              <li class="secondary_tab">
+                <a href= "javascript:void(0);" id="hardware" onclick="addClassToId(this.id)">
+                  <span id="hardware_span">Hardware</span> 
+                </a>
+              </li>
+              <li class="secondary_tab">
+                <a href= "javascript:void(0);" id="business" onclick="addClassToId(this.id)">
+                  <span id="business_span">Business</span> 
+                </a>
+              </li>
+            </ul>
+          </div>
+           
+          <div class = "department-position">
+   <!--********************************************************************************************************************************--> 
+              <div id = "computer_vision_block" class = 'hide'>
+                  <br>
+                <div class = "cv position" style="padding-top:10px;">
+                    <div id= "AppliedCV_wrapper" class="DepartmentHeader">
+                     <a id = "AppliedCV" onclick="controlVisibility(this.id)" style="text-decoration:none">  
+                        <h3 class="posHeader">Applied Computer Vision Engineer</h3>
+                        <img src="/images/up.png"/ id = "AppliedCV_UpImage" class="hide imageProp">
+                        <img src="/images/down.png"/ id = "AppliedCV_DownImage" class="show imageProp">
+                     </a>
+                    
+
+                    </div>
+                  <div class = "position-body margin-top-15 hide" id="AppliedCV_block">
+                    <p class = "position-text text-primary posBlock">
+                        We are looking for research engineers who can extend and develop algorithms for our camera. You will get
+                        an hands on experience by doing research and rapid prototyping using a combination of state-of-the-art
+                        computer vision algorithms. You will be required to perform experimentations and also get to publish in top
+                        tier conferences. You will develop the proof-of-concept algorithms and hand-off to engineering. Areas of
+                        computer vision work may include innovations in SLAM, 3D scene understanding, situational awareness etc.<br><br>
+                        <b>Job Title: </b> Applied Compute Vision Engineer<br>
+                        <b>Period: </b>Full-time<br>
+                        <a href="/documents/CV/Camera_and_Electrical_Hardware_Engineer.pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+                    </p>
+                  </div>
+                </div>
+
+                
+
+                <div class = "cv position" style="padding-top:10px;">
+                  <div id= "CIRS_wrapper" class="DepartmentHeader">
+                    <a id = "CIRS" onclick="controlVisibility(this.id)" style="text-decoration:none">    
+                     <h3 class="posHeader">Computational Imaging Research Scientist</h3>
+                      <img src="/images/up.png"/ id = "CIRS_UpImage" class="hide imageProp">
+                      <img src="/images/down.png"/ id = "CIRS_DownImage" class="show imageProp">
+                    </a>
+                  </div>
+                    <div class = "position-body margin-top-15 hide" id="CIRS_block">
+                      <p class = "position-text text-primary posBlock">
+                          We are looking for research scientists who can extend and develop algorithms for our machine vision
+                          platform for robotics and autonomous vehicles. You will get an hands on experience by doing research and
+                          rapid prototyping using a combination of state-of-the-art computer vision algorithms. You will be required to
+                          perform experimentations and publish in top tier conferences.<br><br>
+                          <b>Job Title: </b> Computational Imaging Research Scientist<br>
+                          <b>Period: </b>Full-time<br>
+                          <a href="/documents/CV/JD_Computational_Imaging_Research_Scientist.pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+                      </p>
+                    </div>
+                  </div>
+
+                  
+
+                  <div class = "cv position" style="padding-top:10px;">
+                      <div id= "CVRE_wrapper" class="DepartmentHeader">
+                          <a id = "CVRE" onclick="controlVisibility(this.id)" style="text-decoration:none">  
+                            <h3 class="posHeader">Computer Vision Research Engineer</h3>
+                            <img src="/images/up.png"/ id = "CVRE_UpImage" class="hide imageProp">
+                            <img src="/images/down.png"/ id = "CVRE_DownImage" class="show imageProp">
+                          </a>
+                      </div>
+                      <div class = "position-body margin-top-15 hide" id="CVRE_block">
+                        <p class = "position-text text-primary posBlock">We are looking for research engineers who can extend and develop algorithms for our machine vision
+                            platform for robotics and autonomous vehicles. You will get an hands on experience by doing research and
+                            rapid prototyping using a combination of state-of-the-art computer vision algorithms. You will be required to
+                            perform experimentations and also get to publish in top tier conferences.<br><br>
+                            <b>Job Title: </b> Computer Vision Research Engineer<br>
+                            <b>Period: </b>Full-time<br>
+                            <a href="/documents/CV/JD_Computer_Vision_Research_Engineer.pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+                        </p>
+                      </div>
+                    </div>
+
+                    
+
+                    <div class = "cv position" style="padding-top:10px;">
+                        <div id= "CVRS_wrapper" class="DepartmentHeader">
+                            <a id = "CVRS" onclick="controlVisibility(this.id)" style="text-decoration:none">
+                             <h3 class="posHeader">Computer Vision Research Scientist</h3>
+                             <img src="/images/up.png"/ id = "CVRS_UpImage" class="hide imageProp">
+                            <img src="/images/down.png"/ id = "CVRS_DownImage" class="show imageProp">
+                            </a>
+                          </div>
+                        <div class = "position-body margin-top-15 hide" id="CVRS_block">
+                          <p class = "position-text text-primary posBlock">We are looking for research scientists who can extend and develop algorithms for our machine vision
+                              platform for robotics and autonomous vehicles. You will get an hands on experience by doing research and
+                              rapid prototyping using a combination of state-of-the-art computer vision algorithms. You will be required to
+                              perform experimentations and publish in top tier conferences.<br><br>
+                              <b>Job Title: </b> Computer Vision Research Scientist<br>
+                              <b>Period: </b>Full-time<br>
+                              <a href="/documents/CV/JD_Computer_Vision_Research_Scientist.pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+                          </p>
+                        </div>
+                      </div>
+
+                      
+
+                        <div class = "cv position" style="padding-top:10px;">
+                            <div id= "MLRS_wrapper" class="DepartmentHeader">
+                                <a id = "MLRS" onclick="controlVisibility(this.id)" style="text-decoration:none">
+                                  <h3 class="posHeader">Machine Learning Research Scientist</h3>
+                                  <img src="/images/up.png"/ id = "MLRS_UpImage" class="hide imageProp">
+                                  <img src="/images/down.png"/ id = "MLRS_DownImage" class="show imageProp">
+                                </a>
+                              </div>
+                            <div class = "position-body margin-top-15 hide" id="MLRS_block">
+                              <p class = "position-text text-primary posBlock">We are looking for research scientists who can extend and develop algorithms for our machine vision
+                                  platform for robotics and autonomous vehicles. You will get an hands on experience by doing research and
+                                  rapid prototyping using a combination of state-of-the-art machine vision algorithms. You will be helping to
+                                  build the core machine learning building blocks upon which computer vision specific API’s can be built. You
+                                  will be required to perform experimentations and publish in top tier conferences.<br><br>
+                                  <b>Job Title: </b>Machine Learning Research Scientist<br>
+                                  <b>Period: </b>Full-time<br>
+                                  <a href="/documents/CV/JD_Machine_Learning_Research_Scientist.pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+                              </p>
+                            </div>
+                          </div>
+
+                          
+
+                          <div class = "cv position" style="padding-top:10px;">
+                              <div id= "MVSE_wrapper" class="DepartmentHeader">
+                                  <a id = "MVSE" onclick="controlVisibility(this.id)" style="text-decoration:none">
+                                    <h3 class="posHeader">Machine Vision Software Engineer</h3>
+                                    <img src="/images/up.png"/ id = "MVSE_UpImage" class="hide imageProp">
+                                    <img src="/images/down.png"/ id = "MVSE_DownImage" class="show imageProp">
+                                  </a>
+                                </div>
+                              <div class = "position-body margin-top-15 hide" id="MVSE_block">
+                                <p class = "position-text text-primary posBlock">We are looking for talented people to design, develop and deploy our state-of-the-art computer vision and
+                                    deep learning algorithms for our software platform. As a machine vision software engineer, you will be
+                                    developing super modular video acquisition and processing systems for VR/AR and machine vision
+                                    applications. You will get an hands on experience by working on modern cameras to build systems which
+                                    can capture, process and store VR content in real time.<br><br>
+                                    <b>Job Title: </b> Machine Vision Software Engineer<br>
+                                    <b>Period: </b>Full-time<br>
+                                    <a href="/documents/CV/JD_Machine_Vision_Software_Engineer .pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+                                </p>
+                              </div>
+                            </div>
+
+                  
+
+                        <div class = "cv position" style="padding-top:10px;">
+                            <div id= "RRS_wrapper" class="DepartmentHeader">
+                                <a id = "RRS" onclick="controlVisibility(this.id)" style="text-decoration:none">
+                                  <h3 class="posHeader">Robotics Research Scientist</h3>
+                                  <img src="/images/up.png"/ id = "RRS_UpImage" class="hide imageProp">
+                                  <img src="/images/down.png"/ id = "RRS_DownImage" class="show imageProp">
+                                </a>
+                              </div>
+                          <div class = "position-body margin-top-15 hide" id="RRS_block">
+                            <p class = "position-text text-primary posBlock">We are looking for research scientists who can extend and develop algorithms for our machine vision
+                                platform for robotics and autonomous vehicles. You will get an hands on experience by doing research and
+                                rapid prototyping using a combination of state-of-the-art computer vision algorithms. You will be required to
+                                perform experimentations and publish in top tier conferences.<br><br>
+                                <b>Job Title: </b> Robotics Research Scientist<br>
+                                <b>Period: </b>Full-time<br>
+                                <a href="/documents/CV/JD_Robotics_Research_Scientist.pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+                            </p>
+                          </div>
+                        </div>
+              </div>
+<!--********************************************************************************************************************************-->              
+                <div id = "software_block" class = 'hide'>
+                    <br>
+                    <div class = "sw position" style="padding-top:10px;">
+                        <div id= "FESE_wrapper" class="DepartmentHeader">
+                            <a id = "FESE" onclick="controlVisibility(this.id)" style="text-decoration:none">
+                              <h3 class="posHeader">Front end Software Engineer</h3>
+                              <img src="/images/up.png"/ id = "FESE_UpImage" class="hide imageProp">
+                              <img src="/images/down.png"/ id = "FESE_DownImage" class="show imageProp">
+                            </a>
+                          </div>
+                        <div class = "position-body margin-top-15 hide" id="FESE_block">
+                          <p class = "position-text text-primary posBlock">We are looking for talented people to design, develop and deploy high quality software components for our
+                              camera systems. As a software intern, you will be developing super modular video acquisition and
+                              processing systems for VR/AR and machine vision applications. You will get an hands on experience by
+                              working on modern cameras to build systems which can capture, process and store VR content in real time.<br><br>
+                              <b>Job Title: </b> Front end Software Engineer<br>
+                              <b>Period: </b>Full-time<br>
+                              <a href="/documents/Software/JD_Front_End_Software_Engineer.pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class = "sw position" style="padding-top:10px;">
+                          <div id= "SCSE_wrapper" class="DepartmentHeader">
+                              <a id = "SCSE" onclick="controlVisibility(this.id)" style="text-decoration:none">
+                                <h3 class="posHeader">Senior Camera Software Engineer</h3>
+                                <img src="/images/up.png"/ id = "SCSE_UpImage" class="hide imageProp">
+                                <img src="/images/down.png"/ id = "SCSE_DownImage" class="show imageProp">
+                              </a>
+                            </div>
+                          <div class = "position-body margin-top-15 hide" id="SCSE_block">
+                            <p class = "position-text text-primary posBlock">We are looking for talented people to design, develop and deploy high quality software components for our
+                                camera systems. As a camera software engineer, you will be developing super modular video acquisition and
+                                processing systems for VR/AR and machine vision applications. You will get an hands on experience by
+                                working on modern cameras to build systems which can capture, process and store VR content in real time.<br><br>
+                                <b>Job Title: </b>Senior Camera Software Engineer<br>
+                                <b>Period: </b>Full-time<br>
+                                <a href="/documents/Software/JD_Senior_Camera_Software_Engineer.pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class = "sw position" style="padding-top:10px;">
+                            <div id= "SSDE_wrapper" class="DepartmentHeader">
+                                <a id = "SSDE" onclick="controlVisibility(this.id)" style="text-decoration:none">
+                                 <h3 class="posHeader">Senior Software Development Engineer</h3>
+                                 <img src="/images/up.png"/ id = "SSDE_UpImage" class="hide imageProp">
+                                 <img src="/images/down.png"/ id = "SSDE_DownImage" class="show imageProp">
+                                </a>
+                              </div>
+                            <div class = "position-body margin-top-15 hide" id="SSDE_block">
+                              <p class = "position-text text-primary posBlock">DreamVu is a research and development oriented company and we are looking for talented people to design,
+                                  develop and deploy high quality software components for our camera systems. We are building cutting edge
+                                  softwares as a part of our human vision and machine vision platform which includes core competent
+                                  technologies like robotics, deep learning, artificial intelligence, computer vision and computational
+                                  photography. As a senior software development engineer you would be working with team developing
+                                  exciting products and cross- functional engineering teams. You will work closely with design and research
+                                  team to take the product from concept to customer release.<br><br>
+                                  <b>Job Title: </b> Senior Software Development Engineer<br>
+                                  <b>Period: </b>Full-time<br>
+                                  <a href="/documents/Software/JD_Senior_Software_Development_Engineer.pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class = "sw position" style="padding-top:10px;">
+                              <div id= "SDE_wrapper" class="DepartmentHeader">
+                                  <a id = "SDE" onclick="controlVisibility(this.id)" style="text-decoration:none">
+                                   <h3 class="posHeader">Software Development Engineer</h3>
+                                   <img src="/images/up.png"/ id = "SDE_UpImage" class="hide imageProp">
+                                   <img src="/images/down.png"/ id = "SDE_DownImage" class="show imageProp">
+                                  </a>
+                                </div>
+                              <div class = "position-body margin-top-15 hide" id="SDE_block">
+                                <p class = "position-text text-primary posBlock">We are looking for talented people to design, develop and deploy high quality software components for our
+                                    camera systems. As a software intern, you will be developing super modular video acquisition and
+                                    processing systems for VR/AR and machine vision applications. You will get an hands on experience by
+                                    working on modern cameras to build systems which can capture, process and store VR content in real time.<br><br>
+                                    <b>Job Title: </b> Software Development Engineer<br>
+                                    <b>Period: </b>Full-time<br>
+                                    <a href="/documents/Software/JD_Software_Development_Engineer.pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+                                </p>
+                              </div>
+                            </div>
+
+                </div>
+    <!--********************************************************************************************************************************-->  
+
+                <div id = "design_block" class = 'hide'>
+                    <br>
+                    <div class = "design_mech position" style="padding-top:10px;">
+                        <div id= "DME_wrapper" class="DepartmentHeader">
+                            <a id = "DME" onclick="controlVisibility(this.id)" style="text-decoration:none">
+                              <h3 class="posHeader">Design and Mechanical Engineer</h3>
+                              <img src="/images/up.png"/ id = "DME_UpImage" class="hide imageProp">
+                              <img src="/images/down.png"/ id = "DME_DownImage" class="show imageProp">
+                            </a>
+                          </div>
+                        <div class = "position-body margin-top-15 hide" id="DME_block">
+                          <p class = "position-text text-primary posBlock">We are looking for talented and innovative Industrial designers who can create capable products and
+                              experiences for users. You will be working on camera assembly designs from prototyping early concepts
+                              through production maintaining industrial trends and market needs.<br><br>
+                              <b>Job Title: </b> Design and Mechanical Engineer<br>
+                              <b>Period: </b>Full-time<br>
+                              <a href="/documents/Design/JD_Design_Mechanical_Engineer.pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class = "design_mech position" style="padding-top:10px;">
+                          <div id= "ID_wrapper" class="DepartmentHeader">
+                              <a id = "ID" onclick="controlVisibility(this.id)" style="text-decoration:none">
+                               <h3 class="posHeader">Industrial Designer</h3>
+                               <img src="/images/up.png"/ id = "ID_UpImage" class="hide imageProp">
+                               <img src="/images/down.png"/ id = "ID_DownImage" class="show imageProp">
+                              </a>
+                            </div>
+                          <div class = "position-body margin-top-15 hide" id="ID_block">
+                            <p class = "position-text text-primary posBlock">We are looking for talented and innovative Industrial designers who can create capable products and
+                                experiences for users. You will be working on camera assembly designs from prototyping early concepts
+                                through production maintaining industrial trends and market needs. You will be interpreting and translating
+                                the complex technologies into simple and beautiful products and user experiences.<br><br>
+                                <b>Job Title: </b> Industrial Designer<br>
+                                <b>Period: </b>Full-time<br>
+                                <a href="/documents/Design/JD_Industrial_Designer.pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+                            </p>
+                          </div>
+                        </div>
+
+                </div>
+
+    <!--********************************************************************************************************************************-->  
+
+                <div id = "embedded_block" class = 'hide'>
+                    <br>
+                    <div class = "embed position" style="padding-top:10px;">
+                        <div id= "CHE_wrapper" class="DepartmentHeader">
+                            <a id = "CHE" onclick="controlVisibility(this.id)" style="text-decoration:none">
+                              <h3 class="posHeader">Camera Hardware Engineer</h3>
+                              <img src="/images/up.png"/ id = "CHE_UpImage" class="hide imageProp">
+                              <img src="/images/down.png"/ id = "CHE_DownImage" class="show imageProp">
+                            </a>
+                          </div>
+                        <div class = "position-body margin-top-15 hide" id="CHE_block">
+                          <p class = "position-text text-primary posBlock">We are looking for hardware engineers who can design and develop the system level design of our
+                              cameras from the lowest levels of circuit design to large system design. You will be working on our core
+                              camera designs and enable the end to end pipeline with embedded software team.<br><br>
+                              <b>Job Title: </b> Camera Hardware Engineer<br>
+                              <b>Period: </b>Full-time<br>
+                              <a href="/documents/Embedded/JD_Camera_Hardware_Engineer.pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class = "embed position" style="padding-top:10px;">
+                          <div id= "CSE_wrapper" class="DepartmentHeader">
+                              <a id = "CSE" onclick="controlVisibility(this.id)" style="text-decoration:none">
+                                <h3 class="posHeader">Camera Software Engineer</h3>
+                                <img src="/images/up.png"/ id = "CSE_UpImage" class="hide imageProp">
+                                <img src="/images/down.png"/ id = "CSE_DownImage" class="show imageProp">
+                              </a>
+                            </div>
+                          <div class = "position-body margin-top-15 hide" id="CSE_block">
+                            <p class = "position-text text-primary posBlock">We are looking for talented people to design, develop and deploy high quality software components for our
+                                camera systems. As a camera software engineer, you will be developing super modular video acquisition and
+                                processing systems for VR/AR and machine vision applications. You will get an hands on experience by
+                                working on modern cameras to build systems which can capture, process and store VR content in real time.<br><br>
+                                <b>Job Title: </b> Camera Software Engineer<br>
+                                <b>Period: </b>Full-time<br>
+                                <a href="/documents/Embedded/JD_Camera_Software_Engineer.pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class = "embed position" style="padding-top:10px;">
+                            <div id= "CSYE_wrapper" class="DepartmentHeader">
+                                <a id = "CSYE" onclick="controlVisibility(this.id)" style="text-decoration:none">
+                                 <h3 class="posHeader">Camera Systems Engineer</h3>
+                                 <img src="/images/up.png"/ id = "CSYE_UpImage" class="hide imageProp">
+                                 <img src="/images/down.png"/ id = "CSYE_DownImage" class="show imageProp">
+                                </a>
+                              </div>
+                            <div class = "position-body margin-top-15 hide" id="CSYE_block">
+                              <p class = "position-text text-primary posBlock">We are looking for talented people to design, develop and deploy high quality firmware components for our
+                                  camera systems. As a Camera Systems Engineer, you will be responsible for bringing new camera sub-
+                                  system designs from concept, development and validation through to manufacturing advice. You will work                                  
+                                  closely with multi-disciplinary groups including Product Design, Industrial Design, Hardware Engineering,
+                                  Reliability and Operations, to drive key aspects of engineering of consumer electronics products. You will
+                                  perform analysis and testing of complex opto-electronic assemblies using advanced simulation and
+                                  experimentation tools and techniques.<br><br>
+                                  <b>Job Title: </b> Camera Systems Engineer<br>
+                                  <b>Period: </b>Full-time<br>
+                                  <a href="/documents/Embedded/JD_Camera_Systems_Engineer.pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class = "embed position" style="padding-top:10px;">
+                              <div id= "ESE_wrapper" class="DepartmentHeader">
+                                  <a id = "ESE" onclick="controlVisibility(this.id)" style="text-decoration:none">
+                                    <h3 class="posHeader">Embedded Software Engineer</h3>
+                                    <img src="/images/up.png"/ id = "ESE_UpImage" class="hide imageProp">
+                                    <img src="/images/down.png"/ id = "ESE_DownImage" class="show imageProp">
+                                  </a>
+                                </div>
+                              <div class = "position-body margin-top-15 hide" id="ESE_block">
+                                <p class = "position-text text-primary posBlock">The ideal candidate has a very strong background in low-level and system development for embedded
+                                    devices and has worked on firmware. While low-level experience is imperative, we want engineers willing to
+                                    work on multiple areas of the stack. As a video and camera software engineer in the Embedded software
+                                    team, you will be the resident authority in camera and video software development for next generation
+                                    autonomous driving platform. We are looking for talented people to design, develop and deploy high quality
+                                    software components for our camera systems. As a software intern, you will be developing super modular
+                                    video acquisition and processing systems for VR/AR and machine vision applications. You will get an hands
+                                    on experience by working on modern cameras to build systems which can capture, process and store VR
+                                    content in real time.<br><br>
+                                    <b>Job Title: </b> Embedded Software Engineer<br>
+                                    <b>Period: </b>Full-time<br>
+                                    <a href="/documents/Embedded/JD_Embedded_Software_Engineer_Camera.pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+                                </p>
+                              </div>
+                            </div>
+
+                            <div class = "embed position" style="padding-top:10px;">
+                                <div id= "SESE_wrapper" class="DepartmentHeader">
+                                    <a id = "SESE" onclick="controlVisibility(this.id)" style="text-decoration:none">
+                                     <h3 class="posHeader">Senior Embedded Software Engineer</h3>
+                                     <img src="/images/up.png"/ id = "SESE_UpImage" class="hide imageProp">
+                                    <img src="/images/down.png"/ id = "SESE_DownImage" class="show imageProp">
+                                    </a>
+                                  </div>
+                                <div class = "position-body margin-top-15 hide" id="SESE_block">
+                                  <p class = "position-text text-primary posBlock">The ideal candidate has a very strong background in low-level and system development for embedded
+                                      devices and has worked on firmware. While low-level experience is imperative, we want engineers willing to
+                                      work on multiple areas of the stack. As a video and camera software engineer in the Embedded software
+                                      team, you will be the resident authority in camera and video software development for next generation
+                                      autonomous driving platform. We are looking for talented people to design, develop and deploy high quality
+                                      software components for our camera systems. As a software intern, you will be developing super modular
+                                      video acquisition and processing systems for VR/AR and machine vision applications. You will get an hands
+                                      on experience by working on modern cameras to build systems which can capture, process and store VR
+                                      content in real time.<br><br>
+                                      <b>Job Title: </b>Senior Embedded Software Engineer<br>
+                                      <b>Period: </b>Full-time<br>
+                                      <a href="/documents/Embedded/JD_Senior_Embedded_Software_Engineer_Camera.pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+                                  </p>
+                                </div>
+                              </div>
+
+                </div>
+
+     <!--********************************************************************************************************************************--> 
+    
+                <div id = "hardware_block" class ='hide'>
+                    <br>
+                    <div class = "hw position" style="padding-top:10px;">
+                        <div id= "SCHE_wrapper" class="DepartmentHeader">
+                            <a id = "SCHE" onclick="controlVisibility(this.id)" style="text-decoration:none">
+                              <h3 class="posHeader">Senior Camera Hardware Engineer</h3>
+                              <img src="/images/up.png"/ id = "SCHE_UpImage" class="hide imageProp">
+                              <img src="/images/down.png"/ id = "SCHE_DownImage" class="show imageProp">
+                            </a>
+                          </div>
+                        <div class = "position-body margin-top-15 hide" id="SCHE_block">
+                          <p class = "position-text text-primary posBlock">We are looking for hardware engineers who can design and develop the system level design of our
+                              cameras from the lowest levels of circuit design to large system design. You will be working on our core
+                              camera designs and enable the end to end pipeline with embedded software team.<br><br>
+                              <b>Job Title: </b>Senior Camera Hardware Engineer<br>
+                              <b>Period: </b>Full-time<br>
+                              <a href="/documents/Hardware/JD_Senior_Camera_Hardware_Engineer.pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+                          </p>
+                        </div>
+                      </div>
+
+                </div>
+       <!--********************************************************************************************************************************--> 
+       
+       <div id = "business_block" class ='hide'>
+        <br>
+
+        <div class = "business position" style="padding-top:10px;">
+          <div id= "BDME_wrapper" class="DepartmentHeader">
+              <a id = "BDME" onclick="controlVisibility(this.id)" style="text-decoration:none">
+                <h3 class="posHeader">Business Development and Marketing Executive</h3>
+                <img src="/images/up.png"/ id = "BDME_UpImage" class="hide imageProp">
+                <img src="/images/down.png"/ id = "BDME_DownImage" class="show imageProp">
+              </a>
+            </div>
+          <div class = "position-body margin-top-15 hide" id="BDME_block">
+            <p class = "position-text text-primary posBlock">This profile gives you an opportunity to work with cross-functional teams cutting across R&amp;D, engineering,
+              marketing and sales to drive strategic partnerships and new initiatives forward with an international scope.
+              Your work will be focussed towards enabling product positioning and marketing communication based on
+              your thorough understanding of the product, competitive land-scape and customer segmentation. You will
+              also get the opportunity to define and execute key marketing initiatives and sales strategies.<br><br>
+
+              <b>Job Title: </b>Business Development and Marketing Executive<br>
+                <b>Period: </b>Full-time<br>
+                <a href="/documents/Business/JD_BusinessDev.pdf" class="job-desc text-accent" target="_blank">View Job Description</a>
+            </p>
+          </div>
+        </div>
+        
+       </div>
+
+    <!--********************************************************************************************************************************-->
+
+
+
+
+            </div>
+          </div>
+        </div>
+      
+    </section>
+    
+      <div id="footer"></div> 
+    </div>
+    
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="/Test/Test/js/script.js?v=0.1"></script>
+
+  <script type="text/javascript">
+    $.ajaxSetup({ cache: false });
+
+    $(document).ready(function () {
+     
+      $(this).on('scroll', function() {
+        var elementstoAnimate = [
+          ".values .value"
+        ]
+        elementstoAnimate.forEach(function(ele) {
+          if($(ele).visible(true)) {
+            $(ele).addClass('animate--show');
+          }
+        });
+      });
+
+      var i = setInterval(function(){
+        if($('.header').length > 0) {
+          clearInterval(i);
+          $('.container').addClass('loaded');
+        }
+      });
+      
+    });
+  </script>
+  <script>var prevId = ""; var prevHeaderId;
+  $("li span").hover(
+  function () {
+    $(this).addClass('active2');$(this).removeClass('inactive');
+  }, 
+  function () {
+    $(this).removeClass('active2');
+  }
+  );
+  
+  
+  $.get( "fragments/footer.html", function( data ) {
+	$("#footer").replaceWith(data);
+});
+</script>
+<script>
+
+  function addClassToId(clickedId){
+        
+        var id = clickedId + "_block";
+        //console.log("id = " , id);console.log("previd = ", prevId);
+
+        if (prevId == "") {
+          prevId = clickedId;
+          //document.getElementById('computer_vision_span').className = 'inactive';
+         document.getElementById(clickedId+'_span').className ='active';
+          if(clickedId!='computer_vision')
+            document.getElementById('computer_vision_block').className='hide';
+          document.getElementById(id).className = 'show';
+        }else if(clickedId != prevId){
+          
+          //console.log("here i am");
+          //document.getElementById(prevId+"_block").className -= 'show';
+          document.getElementById(prevId+"_block").className = 'hide';
+          document.getElementById(prevId+'_span').className ='inactive';
+          document.getElementById(clickedId+'_span').className ='active';
+          document.getElementById(id).className = 'show';
+          prevId = clickedId;
+        }
+      }
+
+    function controlVisibility(clickedId) {
+       // console.log("Clicked on department header");
+        var prevHeaderId_block;
+        var clickedId_block = clickedId+"_block";
+        var clickedBlock = document.getElementById(clickedId_block);
+
+        var currUpImage = clickedId+"_UpImage";
+        var currUpImageBlock = document.getElementById(currUpImage);
+
+        var currDownImage = clickedId+"_DownImage";
+        var currDownImageBlock = document.getElementById(currDownImage);
+
+        //console.log("prevHeadId = ", prevHeaderId);
+        if(prevHeaderId){
+          if(prevHeaderId!=clickedId){
+            console.log("prevheaderId exists");
+             prevHeaderId_block = prevHeaderId+"_block";
+            /* prevWrapper = prevHeaderId+"_wrapper";
+             prevWrapperBlock = document.getElementById(prevWrapper);
+             if(prevWrapperBlock.classList.contains("active")){
+               prevWrapperBlock.classList.remove("active");
+               prevWrapperBlock.classList.add("inactive");
+             }
+              */
+            var prevIdBlock = document.getElementById(prevHeaderId_block);
+            var prevUpImage = document.getElementById(prevHeaderId+"_UpImage");
+            var prevDownImage = document.getElementById(prevHeaderId+"_DownImage");
+            if(prevIdBlock.classList.contains("show")){
+              prevDownImage.classList.remove("hide");
+              prevDownImage.classList.add("show");
+              prevUpImage.classList.remove("show");
+              prevUpImage.classList.add("hide");
+            prevIdBlock.classList.remove("show");
+            prevIdBlock.classList.add("hide");
+            }
+
+          }
+        }
+        
+        if(clickedBlock.classList.contains("hide")) {
+         /* if(currWrapperBlock.classList.contains("inactive")){
+          currWrapperBlock.classList.remove("inactive");
+          currWrapperBlock.classList.add("active");
+        }*/
+        currUpImageBlock.classList.remove("hide");
+        currUpImageBlock.classList.add("show");
+        currDownImageBlock.classList.remove("show");
+        currDownImageBlock.classList.add("hide");
+
+          clickedBlock.classList.remove("hide");
+          clickedBlock.classList.add("show");
+        }else {
+         /* if(currWrapperBlock.classList.contains("active")){
+          currWrapperBlock.classList.remove("active");
+          currWrapperBlock.classList.add("inactive");
+        }*/
+        currDownImageBlock.classList.remove("hide");
+        currDownImageBlock.classList.add("show");
+        currUpImageBlock.classList.remove("show");
+        currUpImageBlock.classList.add("hide");
+
+          clickedBlock.classList.remove("show");
+          clickedBlock.classList.add("hide");
+        }
+
+        prevHeaderId = clickedId;
+
+    }
+</script>
+</body>
+
+</html>

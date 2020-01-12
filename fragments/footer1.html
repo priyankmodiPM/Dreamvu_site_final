@@ -1,0 +1,227 @@
+<style>
+	
+
+.social .iconyt {
+	background-image: url(../Test/images/youtube.png);
+    display: inline-block;
+    line-height: 1em;
+    background-size: 30px 30px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    width: 30px;
+}
+
+.social .iconmed {
+	background-image: url(../Test/images/medium.png);
+    display: inline-block;
+    line-height: 1em;
+    background-size: 30px 30px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    width: 30px;
+}
+
+.footerImage{
+	height:16px;
+	width: 16px;
+	float: left;
+	margin-top: 2%;
+}
+
+.unorderList li{
+	display: inline;
+
+}
+.footerClass{
+	color: white;
+	font-size: 12px;
+	padding-left: 4%;
+}
+.textBlockBold{
+	background-image: url("images/Ribbon.png");
+
+}
+
+.footerIcon{
+	padding: 3%;
+	margin-left: 12%;
+}
+
+#TextBlock{
+	font-size: 20px;
+	width: 30%;
+	line-height: 1.5;
+	padding-left: 7%;
+	color: white;
+	font-family: Helvetica;
+	font-weight: normal;
+	padding-top: 8%;
+}
+
+.footerTextBlock{
+	width: 35%;
+	font-size: 14px;
+	font-family: helvetica;
+	padding-left: 8%;
+	
+	color:#808080;
+}
+
+.column_footer {
+  float: right;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row_footer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.socialImage{
+	height: 50px;
+	padding-bottom: 50px;
+}
+
+.formBlock{
+	padding: 20px;
+	margin-top: -27%;
+	width: 360px;
+	margin-left: 50%;
+	height: 380px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: -5px 5px #DCDCDC
+	}
+
+.formText{
+	font-size: 20px;
+	font-family: helvetica;
+	color: blue;
+	padding: 20px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea{
+	width: 100%;
+	height:100px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submitFooter{
+	background-image: linear-gradient(to right, #2E50A4 , #3D92D1);
+	border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	width:30%;
+	border-radius: 5px;
+}
+
+
+</style>
+
+<section class="footerSection">
+	<div class="">
+		<footer>
+
+			<div class="footerContainer">
+				<div class="textBlockBold">
+					<div id="TextBlock">
+						Any question? Reach out to us and we'll get back to you shortly.
+					</div>
+					<div class="footerIcon">
+						<ul class="unorderList">
+							<li>
+								<img class="footerImage" src="images/Phone.png" /></li>
+							<li>	<span class = "footerClass">+31 012304567</span> </li>
+							
+						</ul>
+						<ul class="unorderList">
+							<li>
+									<img class="footerImage" src="images/Mail.png" />
+									<span class = "footerClass">info@bit.io</span>
+							</li>
+						</ul>
+						<ul class="unorderList">
+							<li>
+									<img class="footerImage" src="images/Telegram.png" />
+									<span class = "footerClass">Join us on Telegram</span>
+							</li>
+
+						</ul>
+							
+
+					</div>
+
+				
+				</div>
+				<div class="formBlock">
+					<p class="formText">Get in touch</p>
+					<form method="post" action="send_mail.php">
+						
+				
+								<input type="text" name="first_name" id="first_name" placeholder="Your name.." required><br>
+			
+								<input type="text" name="email_address" id="email_address" placeholder="Your email.." required>
+
+								<textarea name="comments" form="usrform" required></textarea>
+
+								<input class="submitFooter" type="submit" value="Submit">
+						 </form>
+
+				</div>
+
+				<div class="footerText" style="padding:1%;">
+					<p class="footerTextBlock">
+						At DreamVu we are building  a unified omnistereo platform for disrupting high value machine vision and human vision
+						markets. Our motto is to capture reality like never before.
+					</p>
+				</div>
+			</div>
+			
+				
+				
+			
+			<h6  style="padding-top:2%; padding-left:8%; font-size:12px; color:#03A9F4">&copy; All rights reserved</h6>
+
+			<div class="social">
+					<div class="row_footer">
+							<div class="column_footer">
+							  <img class="socialImage" src="images/Facebook.png"  style="padding-right: 50px;">
+							</div>
+							<div class="column_footer">
+							  <img class="socialImage" src="images/Twitter.png" >
+							</div>
+							<div class="column_footer">
+							  <img class="socialImage" src="images/Tele.png"  >
+							</div>
+						  </div>
+
+					<!--<span class="icon icon-ig"></span>-->
+			</div>
+				
+		</footer>
+	</div>
+</section>
+
